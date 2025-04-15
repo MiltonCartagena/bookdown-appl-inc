@@ -1,21 +1,39 @@
-# Introduction {#intro}
+---
+title: "Análisis de series de tiempo: Acciones Apple Inc."
+author: "Milton Cartagena - Sofy Certuche"
+date: "2025-04-14"
+output:
+  bookdown::gitbook:
+    css: style.css
+    split_by: section
+    number_sections: true
+    toc_depth: 2
+site: bookdown::bookdown_site
+bibliography: ["book.bib"]
+---
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+# Introducción
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+El presente proyecto busca analizar el comportamiento histórico de las acciones de **Apple Inc.** utilizando técnicas de **análisis de series de tiempo**. La información proviene del portal [Yahoo Finance](https://es.finance.yahoo.com/quote/AAPL/), una fuente confiable y de libre acceso que ofrece datos bursátiles en frecuencia diaria.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+El objetivo es predecir el comportamiento futuro de los precios de cierre de las acciones, identificando patrones, estacionalidades y posibles tendencias que permitan generar valor agregado en la toma de decisiones financieras y de inversión.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+## Justificación
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+Trabajar con datos de acciones permite:
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+- Desarrollar habilidades prácticas en la manipulación de datos financieros.
+- Aplicar modelos clásicos y modernos para el pronóstico de series temporales.
+- Producir un producto replicable y accesible en formato bookdown.
+
+El pronóstico de este tipo de información es crucial para:
+
+- Inversores que desean anticiparse a movimientos del mercado.
+- Empresas que desean evaluar escenarios futuros para planificación estratégica.
+- Investigadores y analistas de datos que buscan entender la dinámica del mercado.
+
+## Fuente y permisos
+
+Los datos utilizados provienen de [Yahoo Finance](https://es.finance.yahoo.com/quote/AAPL/), los cuales están disponibles públicamente para fines educativos y de análisis personal. No se requiere licencia especial para su uso en proyectos académicos.
+
+---
