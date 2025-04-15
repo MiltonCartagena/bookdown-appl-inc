@@ -1,39 +1,29 @@
----
-title: "Análisis de series de tiempo: Acciones Apple Inc."
-author: "Milton Cartagena - Sofy Certuche"
-date: "2025-04-14"
-output:
-  bookdown::gitbook:
-    css: style.css
-    split_by: section
-    number_sections: true
-    toc_depth: 2
+
+--- 
+title: "PREDICCIÓN DE LAS ACCIONES DE APPLE INC. UTILIZANDO SERIES DE TIEMPO"
+author:   
+  - "Sofy Johanna Certuche González"
+  - "Milton Cartagena Martinez"
+date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-bibliography: ["book.bib"]
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
-
-# Introducción
-
-El presente proyecto busca analizar el comportamiento histórico de las acciones de **Apple Inc.** utilizando técnicas de **análisis de series de tiempo**. La información proviene del portal [Yahoo Finance](https://es.finance.yahoo.com/quote/AAPL/), una fuente confiable y de libre acceso que ofrece datos bursátiles en frecuencia diaria.
-
-El objetivo es predecir el comportamiento futuro de los precios de cierre de las acciones, identificando patrones, estacionalidades y posibles tendencias que permitan generar valor agregado en la toma de decisiones financieras y de inversión.
-
-## Justificación
-
-Trabajar con datos de acciones permite:
-
-- Desarrollar habilidades prácticas en la manipulación de datos financieros.
-- Aplicar modelos clásicos y modernos para el pronóstico de series temporales.
-- Producir un producto replicable y accesible en formato bookdown.
-
-El pronóstico de este tipo de información es crucial para:
-
-- Inversores que desean anticiparse a movimientos del mercado.
-- Empresas que desean evaluar escenarios futuros para planificación estratégica.
-- Investigadores y analistas de datos que buscan entender la dinámica del mercado.
-
-## Fuente y permisos
-
-Los datos utilizados provienen de [Yahoo Finance](https://es.finance.yahoo.com/quote/AAPL/), los cuales están disponibles públicamente para fines educativos y de análisis personal. No se requiere licencia especial para su uso en proyectos académicos.
-
+ 
+# Análisis de las acciones de Apple Inc.
+ 
+Apple Inc. es una multinacional tecnológica que desarrolla y vende productos electrónicos de consumo y software informativo, cuyo modelo de negocio, constante innovación y presencia mundial la convierten en un referente para el mercado tecnológico y financiero. Es reconocida por sus tres principales líneas de productos, iPhone, iPad, MacBook, por sus servicios como iCloud y Apple Music y, por la implementación de una cadena de tiendas especializadas conocidas como Apple Store. [@Portafolio1]
+ 
+En diciembre de 1980, Apple Inc. empezó a cotizar en el NasdaqGS (Nasdaq Global Select Market) con el ticker "AAPL", lo que indica que cumple con los más altos estándares de liquidez, transparencia y gobernanza corporativa, respaldando la confiabilidad y seriedad de sus datos financieros. [@Degiro1]
+ 
+Apple revolucionó la industria tecnológica con dos lanzamientos, iPod y iPhone, en 2001 y 2007, respectivamente. Estas innovaciones no solo impulsaron las ventas de la compañía, sino que también catapultaron el precio de sus acciones. Entre 2003 y 2007, el valor de las acciones creció más de 1,200%, es decir, un aumento de 12 veces en valor. [@MacCenter]
+ 
+En diciembre de 2024 las acciones de Apple Inc. subieron hasta un máximo histórico de 246,5 dólares, situando su capitalización bursátil en 3,73 billones de dólares, generando una rentabilidad del 26,75% durante dicho año y un PER de 39,82. [@YahooFinance1]
+ 
+Los datos utilizados provienen de **Yahoo Finance**, disponibles para uso público, los cuales están disponibles públicamente para fines educativos y de análisis personal. No se requiere licencia especial para su uso en proyectos académicos. [@YahooFinance2]
 ---
